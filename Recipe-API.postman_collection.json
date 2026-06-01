@@ -1,0 +1,115 @@
+{
+  "info": {
+    "_postman_id": "93e35c5f-c1b9-4a51-b9e1-80cc29fc2a7d",
+    "name": "Recipe-API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55407167",
+    "_collection_link": "https://go.postman.co/collection/55407167-93e35c5f-c1b9-4a51-b9e1-80cc29fc2a7d?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "POST",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n      \"title\": \"Madras Briyani\",\r\n      \"ingredients\": [\"Onions\", \"Rice\", \"Tomatoes\", \"Chicken\"],\r\n      \"instructions\": \"Rice add the spices and chicken saute the tomato.\",\r\n      \"prepTimeMinutes\": 50,\r\n      \"servings\": 4\r\n    }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://recipeapi-4n02.onrender.com/api/recipes",
+          "protocol": "https",
+          "host": [
+            "recipeapi-4n02",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "recipes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "GET",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://recipeapi-4n02.onrender.com/api/recipes",
+          "protocol": "https",
+          "host": [
+            "recipeapi-4n02",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "recipes"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "PATCH",
+      "request": {
+        "method": "PATCH",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"instructions\":\"Rice add the spices and chicken saute the onion and tomato with ginger garlic paste.\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://recipeapi-4n02.onrender.com/api/recipes/6a1dc2caa9abcbe2a5ddc505",
+          "protocol": "https",
+          "host": [
+            "recipeapi-4n02",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "recipes",
+            "6a1dc2caa9abcbe2a5ddc505"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "DELETE",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://recipeapi-4n02.onrender.com/api/recipes/6a1dc2caa9abcbe2a5ddc505",
+          "protocol": "https",
+          "host": [
+            "recipeapi-4n02",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "api",
+            "recipes",
+            "6a1dc2caa9abcbe2a5ddc505"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
